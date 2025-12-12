@@ -53,4 +53,5 @@ dependencies {
 
     implementation("androidx.viewpager2:viewpager2:1.1.0")
     implementation("com.tbuonomo:dotsindicator:4.3")
+    implementation("com.mapbox.maps:android-ndk27:11.17.1")
 }

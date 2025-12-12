@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.bokoar.map.MapActivity
 import com.example.bokoar.settings.SettingsActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -44,6 +45,12 @@ class HomeActivity : AppCompatActivity() {
         settingsButton.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+
+        val openMapButton = findViewById<MaterialCardView>(R.id.cardMap)
+        openMapButton.setOnClickListener {
+            startActivity(Intent(this, MapActivity::class.java))
+        }
+
 
     }
 }

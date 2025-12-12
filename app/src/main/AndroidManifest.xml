@@ -23,6 +23,10 @@
         <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />
+        <activity
+            android:name=".map.MapActivity"
+            android:exported="false"/>
+
 
         <activity
             android:name=".HomeActivity"

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand Purples -->
+    <color name="colorPrimary">#7C4DFF</color>
+    <color name="colorPrimaryDark">#5E35B1</color>
+    <color name="colorPrimaryLight">#B47CFF</color>
+
+    <!-- Secondary Accent -->
+    <color name="colorSecondary">#9575CD</color>
+
+    <!-- Neutrals -->
+    <color name="white">#FFFFFF</color>
+    <color name="softWhite">#F7F7F7</color>
+    <color name="black">#000000</color>
+
+    <!-- Light Mode Surfaces -->
+    <color name="colorBackground">#FFFFFF</color>      <!-- Main screen bg -->
+    <color name="colorSurface">#F7F7F7</color>        <!-- Cards / panels -->
+    <color name="colorSurfaceVariant">#EEEEEE</color> <!-- Borders / subtle areas -->
+
+    <!-- Text -->
+    <color name="textPrimary">#212121</color>   <!-- Almost black -->
+    <color name="textSecondary">#757575</color> <!-- Gray -->
+
+    <!-- Logout -->
+    <color name="textLogout">#b23b3b</color>
+
+
+</resources>

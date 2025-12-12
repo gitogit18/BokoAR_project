@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBarHowTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="How to Use"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/backbutton_poilist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Divider di bawah AppBar -->
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/topAppBarHowTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Konten scrollable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/topDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow these simple steps to explore Ratu Boko with augmented reality:"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="24dp" />
+
+            <!-- Step 1 -->
+            <include
+                android:id="@+id/step1"
+                layout="@layout/item_how_to_step" />
+
+            <!-- Step 2 -->
+            <include
+                android:id="@+id/step2"
+                layout="@layout/item_how_to_step" />
+
+            <!-- Step 3 -->
+            <include
+                android:id="@+id/step3"
+                layout="@layout/item_how_to_step" />
+
+            <!-- Step 4 -->
+            <include
+                android:id="@+id/step4"
+                layout="@layout/item_how_to_step" />
+
+            <!-- Tips Box -->
+            <LinearLayout
+                android:id="@+id/tipsBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_tips_box"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips for using AR optimally"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="- Use AR in a bright and stable environment.\n- Hold your phone steady and keep the marker in frame.\n- Avoid covering the camera or blocking the AR area."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

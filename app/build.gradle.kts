@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.bokoar"
-        minSdk = 27
+        minSdk = 29
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -51,7 +51,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+
     implementation("androidx.viewpager2:viewpager2:1.1.0")
     implementation("com.tbuonomo:dotsindicator:4.3")
     implementation("com.mapbox.maps:android-ndk27:11.17.1")
+    implementation(project(":unityLibrary"))
 }

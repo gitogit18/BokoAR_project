@@ -24,6 +24,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        flatDir {
+            dirs("unityExport/unityLibrary/libs")
+
         maven("https://api.mapbox.com/downloads/v2/releases/maven") {
             authentication {
                 create<BasicAuthentication>("basic")
@@ -37,4 +41,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "BokoAR"
-include(":app")
+include(":app" , ":unityLibrary")
+
+project(":unityLibrary").projectDir =
+    file("unityExport/unityLibrary")}

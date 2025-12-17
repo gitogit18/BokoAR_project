@@ -51,6 +51,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, MapActivity::class.java))
         }
 
+        val startARTour = findViewById<MaterialCardView>(R.id.cardStartAR)
+        startARTour.setOnClickListener {
+            startActivity(Intent(this, UnityTestActivity::class.java))
+        }
+
 
     }
 }

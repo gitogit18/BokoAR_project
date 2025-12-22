@@ -7,10 +7,16 @@ import com.mapbox.geojson.Point
 import com.mapbox.maps.CameraOptions
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
+import android.Manifest
+import android.content.pm.PackageManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.mapbox.maps.plugin.locationcomponent.location
 
 class MapActivity : AppCompatActivity() {
 
     private lateinit var mapView: MapView
+    private val REQ_LOCATION = 1001
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +39,48 @@ class MapActivity : AppCompatActivity() {
                     .zoom(14.0)
                     .build()
             )
+            // enable user location
+            if (hasLocationPermission()) {
+                enableUserLocation()
+            } else {
+                requestLocationPermission()
+            }
+        }
+    }
+
+    private fun hasLocationPermission(): Boolean{
+        return ContextCompat.checkSelfPermission(
+            this,
+            Manifest.permission.ACCESS_FINE_LOCATION
+        ) == PackageManager.PERMISSION_GRANTED
+
+    }
+
+    private fun requestLocationPermission(){
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+            REQ_LOCATION
+        )
+    }
+
+    private fun enableUserLocation(){
+        mapView.location.updateSettings {
+            enabled = true
+            pulsingEnabled = true
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ){
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == REQ_LOCATION && grantResults.isNotEmpty() &&
+            grantResults[0] == PackageManager.PERMISSION_GRANTED)
+        {
+            enableUserLocation()
         }
     }
 

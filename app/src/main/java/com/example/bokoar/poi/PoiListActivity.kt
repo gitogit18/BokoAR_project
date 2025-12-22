@@ -21,6 +21,7 @@ class PoiListActivity : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
+
         // TODO: ganti sample data ini dengan data beneran
         val recommended = listOf(
             Poi(1, "Ratu Boko Temple", "Most Popular", R.drawable.ratubokogate, "Recommended"),

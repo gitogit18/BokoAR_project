@@ -23,6 +23,9 @@ class PoiDetailActivity() : AppCompatActivity() {
         val image = intent.getIntExtra("poi_image", 0)
 
         binding.topAppBarDetail.title = title
-         onBackPressedDispatcher.onBackPressed()
+        binding.tvPOIDescription.text = subtitle
+
+        val images = if (image != 0) listOf(image, image, image) else emptyList()
+        binding.imgPoiHeader.adapter = PoiImagePagerAdapter(images)
     }
 }

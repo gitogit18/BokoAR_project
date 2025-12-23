@@ -16,3 +16,4 @@ local.properties
 .idea/
 unityExport/
 unityExport_old/
+app/src/libs/

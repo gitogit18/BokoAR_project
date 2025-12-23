@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BokoAR</string>
+    <string name="app_name">ARkana</string>
     <string name="title_poi_list">Points Of Interests</string>
-    <string name="mapbox_access_token" translatable="false">YOUR_MAPBOX_TOKEN</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiYW5nZ2l0YWphIiwiYSI6ImNtYjI0NXh1dTBlankyanB4c2d2dHZyMjgifQ.vgE0TO2pVtUaaW6WrjhT_w</string>
 </resources>

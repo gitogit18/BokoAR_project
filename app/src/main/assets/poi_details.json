@@ -1,0 +1,97 @@
+[
+  {
+    "id": "cave_temple",
+    "name": "Cave Temple",
+    "shortDescription": "Meditation chambers",
+    "fullDescription": "To the east of the Ratu Boko site, there are two caves known as Gua Lanang and Gua Wadon. These caves are carved into the stone cliffs located to the north of the Pendapa area, and both of them face south. The interior space of Gua Lanang is larger than that of Gua Wadon. On the rear wall inside Gua Lanang, there are two carved niches, while each of its side walls contains one niche.\nGua Wadon is situated approximately 20 meters to the southeast of Gua Lanang and lies at a lower elevation. On the rear wall inside Gua Wadon, a single niche is carved. It is estimated that these caves once functioned as guard posts, as their surrounding environment offers a clear and wide view toward the southern and eastern areas.",
+    "latitude": -7.7712,
+    "longitude": 110.4982,
+    "category": "Sacred Sites",
+    "images": [
+      "goa1.jpg",
+      "goa2.jpg",
+      "goa3.jpg",
+      "goa4.jpg",
+      "goa5.jpg"
+    ]
+  },
+  {
+    "id": "front_gapura",
+    "name": "Gapura Utama",
+    "shortDescription": "Most popular",
+    "fullDescription": "Gate I is located on the second terrace. This gate complex, designed in the form of a paduraksa, consists of three gates positioned close to one another. The central gate serves as the main gate and is larger in size, with a floor level higher than those of the two flanking gates. Each gate originally had its own roof; however, the roof of the main gate can no longer be reconstructed, and therefore its original shape remains unknown. In front of the gate structure, there is an ascending staircase, with four steps leading to the main gate and three steps leading to each of the flanking gates.\nGate II is located on the third terrace. Like Gate I, Gate II is also constructed in the paduraksa style and functions as a connector between the second and third terraces. Gate II consists of five gates arranged in a straight line and positioned close together. The central and largest gate is known as the main gate, flanked by two gates on the left and right referred to as the outer flanking gates. The staircase leading to the main gate consists of fifteen steps, while the staircases to the inner flanking gates have three steps. The outer flanking gates do not require staircases, as their floor levels are nearly the same as the surface of the third terrace.",
+    "latitude": -7.769386,
+    "longitude": 110.488493,
+    "category": "Historical Structures",
+    "images": [
+      "gapura1.jpg",
+      "gapura2.png",
+      "gapura4.jpg",
+      "gapura5.jpg",
+      "gapura6.jpg"
+    ]
+  },
+  {
+    "id": "pendapa",
+    "name": "Pendapa Agung",
+    "shortDescription": "Royal pavilion",
+    "fullDescription": "The pendapa structure is located on the fourth terrace and covers an area of approximately 14,000 m². The pendapa complex consists of an enclosing fence and two batur (stone platforms), one situated to the north and the other to the south. The base and roof of the surrounding fence are made of andesite stone, while the wall section is constructed from white stone. The upper part of the fence is decorated with utpala ornaments.\nAt the base of the fence, there are jaladwara water spouts that function to drain water from inside the enclosure to the outside, where it is collected in curved containers. Both batur are made of andesite stone and are connected by a corridor. These platforms form the central structure of the complex; in the past, pillars supporting a building once stood on top of them, and the structure is believed to have had walls. This building is thought to have functioned as a residential space.",
+    "latitude": -7.771531,
+    "longitude": 110.490353,
+    "category": "Historical Structures",
+    "images": [
+      "pendapa1.jpg",
+      "pendapa2.jpg",
+      "pendapa3.jpg",
+      "pendapa4.jpg"
+    ]
+  },
+  {
+    "id": "candi_pembakaran",
+    "name": "Candi Pembakaran",
+    "shortDescription": "Pembakaran Temple",
+    "fullDescription": "Candi Pembakaran is located on the third terrace of the complex. The structure consists of a square-shaped platform composed of two terraced levels, with access to the upper level provided by an ascending staircase on the western side. The outer part of the building is constructed from andesite stone, while the inner section is made of tuff stone.\nIn the center of the second terrace, there is a square-shaped well. To the east of Candi Pembakaran, a pool is located and is enclosed by a surrounding fence.",
+    "latitude": -7.769003,
+    "longitude": 110.488779,
+    "category": "Historical Structures",
+    "images": [
+      "pembakaran1.jpg",
+      "pembakaran2.jpg",
+      "pembakaran3.jpg",
+      "pembakaran4.jpg",
+      "pembakaran5.jpg"
+    ]
+  },
+  {
+    "id": "goa",
+    "name": "Goa Lanang dan Wadon",
+    "shortDescription": "Ascetic Caves",
+    "fullDescription": "To the east of the Ratu Boko site, there are two caves known as Gua Lanang and Gua Wadon. These caves are carved into the stone cliffs located to the north of the Pendapa area, and both of them face south. The interior space of Gua Lanang is larger than that of Gua Wadon. On the rear wall inside Gua Lanang, there are two carved niches, while each of its side walls contains one niche.\nGua Wadon is situated approximately 20 meters to the southeast of Gua Lanang and lies at a lower elevation. On the rear wall inside Gua Wadon, a single niche is carved. It is estimated that these caves once functioned as guard posts, as their surrounding environment offers a clear and wide view toward the southern and eastern areas.",
+    "latitude": -7.769799,
+    "longitude": 110.490790,
+    "category": "Historical Structures",
+    "images": [
+      "goa1.jpg",
+      "goa2.jpg",
+      "goa3.jpg",
+      "goa4.jpg",
+      "goa5.jpg"
+    ]
+  },
+  {
+    "id": "keputren",
+    "name": "Keputren",
+    "shortDescription": "The princesses living quarters",
+    "fullDescription": "The keputren area is divided into two parts, namely the eastern section and the western section. These two sections are separated by a fence and are connected by a gate. In the eastern section, there is a square-shaped water reservoir that served as the water supply for the keputren area. To the east of this water reservoir, there are stone base foundations that once supported wooden columns for the roof structure.\nIt is estimated that the keputren originally functioned as a residential area composed of wooden buildings. Within this courtyard, there are stone base supports decorated with reliefs of animals and plants, although their original placement and exact positions have not yet been determined.",
+    "latitude": -7.771995,
+    "longitude": 110.491530,
+    "category": "Historical Structures",
+    "images": [
+      "keputren1.jpg",
+      "keputren2.jpg",
+      "keputren3.jpg",
+      "keputren4.jpg"
+    ]
+  }
+
+]

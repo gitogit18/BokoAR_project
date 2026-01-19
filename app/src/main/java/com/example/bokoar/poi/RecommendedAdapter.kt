@@ -10,8 +10,8 @@ import com.google.android.material.imageview.ShapeableImageView
 import android.widget.TextView
 
 class RecommendedAdapter(
-    private val items: List<Poi>,
-    private val onItemClick: (Poi) -> Unit   // callback klik
+    private val items: List<PoiDetailContent>,
+    private val onItemClick: (PoiDetailContent) -> Unit   // callback klik
 ) : RecyclerView.Adapter<RecommendedAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -30,9 +30,23 @@ class RecommendedAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
-        holder.img.setImageResource(item.imageRes)
-        holder.tvTitle.text = item.title
-        holder.tvSubtitle.text = item.subtitle
+
+        holder.tvTitle.text = item.name
+        holder.tvSubtitle.text = item.shortDescription
+
+        val imageName = item.images.firstOrNull()
+        if (imageName != null){
+            val drawableName = imageName.substringBefore(".")
+            val resId = holder.itemView.context.resources.getIdentifier(
+                drawableName,
+                "drawable",
+                holder.itemView.context.packageName
+            )
+
+            if (resId != 0) {
+                holder.img.setImageResource(resId)
+            }
+        }
 
         holder.itemView.setOnClickListener {
             onItemClick(item)

@@ -12,6 +12,17 @@ class PoiListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPoiListBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val allPois = PoiRepository.getAllPois(this)
+        val recommended = allPois.take(3)
+        val sacredSites = allPois.filter {
+            it.category == "Sacred Sites"
+        }
+        val historical = allPois.filter {
+            it.category == "Historical Structures"
+        }
+
+
         super.onCreate(savedInstanceState)
         binding = ActivityPoiListBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -20,24 +31,6 @@ class PoiListActivity : AppCompatActivity() {
         binding.topAppBarPOI.setNavigationOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
-
-
-        // TODO: ganti sample data ini dengan data beneran
-        val recommended = listOf(
-            Poi(1, "Ratu Boko Temple", "Most Popular", R.drawable.ratubokogate, "Recommended"),
-            Poi(id = 2, "Cave Temple", "Meditation chambers", R.drawable.ratubokogate, "Recommended"),
-            Poi(3, "Bathing Pool", "Sacred water complex", R.drawable.ratubokogate, "Recommended")
-        )
-
-        val sacredSites = listOf(
-            Poi(2, "Cave Temple", "Meditation chambers", R.drawable.ratubokogate, "Sacred Sites"),
-            Poi(3, "Bathing Pool", "Sacred water complex", R.drawable.ratubokogate, "Sacred Sites")
-        )
-
-        val historical = listOf(
-            Poi(4, "Stone Terrace", "Panoramic viewpoint", R.drawable.ratubokogate, "Historical Structures"),
-            Poi(5, "Guard Tower", "Defensive lookout", R.drawable.ratubokogate, "Historical Structures")
-        )
 
         // RECOMMENDED – horizontal
         binding.rvRecommended.apply {
@@ -68,13 +61,9 @@ class PoiListActivity : AppCompatActivity() {
         }
     }
 
-    private fun openPoiDetail(poi: Poi) {
-        val intent = Intent(this, PoiDetailActivity::class.java).apply {
-            putExtra("poi_title", poi.title)
-            putExtra("poi_subtitle", poi.subtitle)
-            putExtra("poi_image", poi.imageRes)
-            // Kalau mau: putExtra("poi_description", longText)
-        }
-        startActivity(intent)
+    private fun openPoiDetail(poi: PoiDetailContent) {
+        val intent = Intent(this, PoiDetailActivity::class.java)
+            intent.putExtra("POI_ID", poi.id)
+            startActivity(intent)
     }
 }

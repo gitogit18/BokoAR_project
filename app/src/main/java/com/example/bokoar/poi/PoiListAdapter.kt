@@ -7,8 +7,8 @@ import com.example.bokoar.R
 import android.widget.TextView
 
 class PoiListAdapter(
-    private val items: List<Poi>,
-    private val onItemClick: (Poi) -> Unit
+    private val items: List<PoiDetailContent>,
+    private val onItemClick: (PoiDetailContent) -> Unit
 ) : RecyclerView.Adapter<PoiListAdapter.ViewHolder>() {
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvTitle: TextView = view.findViewById(R.id.tvPoiTitle)
@@ -26,8 +26,8 @@ class PoiListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
-        holder.tvTitle.text = item.title
-        holder.tvSubtitle.text = item.subtitle
+        holder.tvTitle.text = item.name
+        holder.tvSubtitle.text = item.shortDescription
 
         holder.itemView.setOnClickListener {
             onItemClick(item)

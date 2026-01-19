@@ -8,15 +8,38 @@ import com.mapbox.maps.CameraOptions
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
+import android.util.Log
+import com.mapbox.maps.plugin.annotation.annotations
+import com.mapbox.maps.plugin.annotation.generated.PointAnnotationOptions
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.bokoar.poi.PoiDetailActivity
 import com.mapbox.maps.plugin.locationcomponent.location
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import com.mapbox.maps.plugin.annotation.generated.createPointAnnotationManager
+import java.io.InputStreamReader
+
+
 
 class MapActivity : AppCompatActivity() {
 
     private lateinit var mapView: MapView
     private val REQ_LOCATION = 1001
+
+    private lateinit var poiList: List<PoiMarker>
+
+    private fun loadPoimarkersFromJSon(): List<PoiMarker> {
+        val inputStream = resources.openRawResource(R.raw.poi_marker)
+        val reader = InputStreamReader(inputStream)
+
+        val type = object : TypeToken<List<PoiMarker>>() {}.type
+        return Gson().fromJson(reader, type)
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,8 +54,10 @@ class MapActivity : AppCompatActivity() {
 
         val ratuBoko = Point.fromLngLat(110.4923, -7.7696)
 
+        poiList = loadPoimarkersFromJSon()
+
         // Load style dulu, baru set camera
-        mapView.getMapboxMap().loadStyleUri(Style.MAPBOX_STREETS) {
+        mapView.getMapboxMap().loadStyleUri(Style.MAPBOX_STREETS) { style ->
             mapView.getMapboxMap().setCamera(
                 CameraOptions.Builder()
                     .center(ratuBoko)
@@ -45,6 +70,11 @@ class MapActivity : AppCompatActivity() {
             } else {
                 requestLocationPermission()
             }
+
+            addPoiIcon(style)
+            setupPoiAnnotations()
+
+
         }
     }
 
@@ -84,6 +114,58 @@ class MapActivity : AppCompatActivity() {
         }
     }
 
+    private fun addPoiIcon(style: Style) {
+        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.markerpeta)
+        style.addImage("poi-icon", bitmap)
+    }
+
+    private fun setupPoiAnnotations() {
+
+        val annotationApi = mapView.annotations
+        val pointAnnotationManager =
+            annotationApi.createPointAnnotationManager()
+
+        poiList.forEach { poi ->
+            val options = PointAnnotationOptions()
+                .withPoint(Point.fromLngLat(poi.longitude, poi.latitude))
+                .withIconImage("poi-icon")
+                .withIconSize(0.6)
+                .withData(
+                    Gson().toJsonTree(
+                        mapOf("id" to poi.id)
+                    )
+                )
+
+            pointAnnotationManager.create(options)
+        }
+
+        pointAnnotationManager.addClickListener { annotation ->
+
+            val poiId = annotation.getData()
+                ?.asJsonObject
+                ?.get("id")
+                ?.asString
+
+            Log.d("POI_CLICK", "Clicked: $poiId")
+
+            if (poiId != null) {
+                openPoiDetail(poiId)
+            }
+
+            true
+
+        }
+    }
+
+    private fun openPoiDetail(poiId: String) {
+        val intent = Intent(this, PoiDetailActivity::class.java)
+        intent.putExtra("POI_ID", poiId)
+        startActivity(intent)
+    }
+
+
+
+
     override fun onStart() {
         super.onStart();
         mapView.onStart()
@@ -101,3 +183,5 @@ class MapActivity : AppCompatActivity() {
         mapView.onDestroy()
     }
 }
+
+

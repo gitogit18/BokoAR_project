@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bokoar.poi.PoiListActivity
 import com.example.bokoar.databinding.ActivityPoiDetailBinding
+import com.example.bokoar.map.MapActivity
 
 
 class PoiDetailActivity() : AppCompatActivity() {
@@ -18,14 +19,36 @@ class PoiDetailActivity() : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
-        val title = intent.getStringExtra("poi_title") ?: ""
-        val subtitle = intent.getStringExtra("poi_subtitle") ?: ""
-        val image = intent.getIntExtra("poi_image", 0)
+        val poiId = intent.getStringExtra("POI_ID")
 
-        binding.topAppBarDetail.title = title
-        binding.tvPOIDescription.text = subtitle
+        if (poiId == null){
+            finish()
+            return
+        }
 
-        val images = if (image != 0) listOf(image, image, image) else emptyList()
-        binding.imgPoiHeader.adapter = PoiImagePagerAdapter(images)
+        val poi = PoiRepository.getPoiById(this, poiId)
+        if (poi == null){
+            finish()
+            return
+        }
+
+        bindPoi(poi)
+
+        binding.btnViewInMap.setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
     }
+    private fun bindPoi(poi: PoiDetailContent) {
+        binding.topAppBarDetail.title = poi.name
+        binding.tvPOIDetailTitle.text = poi.name
+        binding.tvPOIDescription.text = poi.fullDescription
+
+
+        binding.imgPoiHeader.adapter =
+            PoiImagePagerAdapter(poi.images)
+
+
+    }
+
 }

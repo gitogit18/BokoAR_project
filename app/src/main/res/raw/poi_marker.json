@@ -1,0 +1,32 @@
+[
+  {
+    "id": "front_gapura",
+    "name": "Gapura Utama",
+    "latitude": -7.769401 ,
+    "longitude": 110.488501
+  },
+  {
+    "id": "candi_pembakaran",
+    "name": "Candi Pembakaran",
+    "latitude": -7.769003 ,
+    "longitude": 110.488779
+  },
+  {
+    "id": "goa",
+    "name": "Goa Lanang dan Wadon",
+    "latitude": -7.769799,
+    "longitude": 110.490790
+  },
+  {
+    "id": "pendapa",
+    "name": "Pendapa or Palace",
+    "latitude": -7.771531,
+    "longitude": 110.490353
+  },
+  {
+    "id": "keputren",
+    "name": "Keputren",
+    "latitude": -7.771995,
+    "longitude": 110.491530
+  }
+]

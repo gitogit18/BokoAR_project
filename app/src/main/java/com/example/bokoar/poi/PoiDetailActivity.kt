@@ -2,6 +2,7 @@ package com.example.bokoar.poi
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.bokoar.R
 import com.example.bokoar.poi.PoiListActivity
 import com.example.bokoar.databinding.ActivityPoiDetailBinding
 import com.example.bokoar.map.MapActivity
@@ -54,6 +55,28 @@ class PoiDetailActivity() : AppCompatActivity() {
 
         binding.imgPoiHeader.adapter =
             PoiImagePagerAdapter(poi.images)
+
+        val chipGroup = binding.chipGroup
+
+        chipGroup.removeAllViews()
+
+        poi.chips.forEach { chipText ->
+            val chip = com.google.android.material.chip.Chip(this)
+
+            chip.text = chipText
+
+
+            chip.chipCornerRadius = 50f
+            chip.chipStrokeWidth = 2f
+
+            chip.chipBackgroundColor = resources.getColorStateList(R.color.colorPrimaryDark)
+            chip.setTextColor(resources.getColor(android.R.color.white))
+
+            chip.isClickable = false
+            chip.isCheckable = false
+
+            chipGroup.addView(chip)
+        }
 
 
     }

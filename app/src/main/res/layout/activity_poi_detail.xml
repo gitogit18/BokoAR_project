@@ -89,13 +89,14 @@
                 android:scrollbars="none">
 
                 <LinearLayout
+                    android:id="@+id/chipGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView style="@style/ChipStyle" android:text="Historical Site"/>
-                    <TextView style="@style/ChipStyle" android:text="Cave Complex"/>
-                    <TextView style="@style/ChipStyle" android:text="Guard Post"/>
+                    <TextView style="@style/ChipStyle" android:text=""/>
+                    <TextView style="@style/ChipStyle" android:text=""/>
+                    <TextView style="@style/ChipStyle" android:text=""/>
 
                 </LinearLayout>
             </HorizontalScrollView>

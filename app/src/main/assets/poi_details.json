@@ -33,6 +33,11 @@
       "pendapa2.jpg",
       "pendapa3.jpg",
       "pendapa4.jpg"
+    ],
+    "chips": [
+      "Pavilion",
+      "Meeting",
+      "Royal"
     ]
   },
   {
@@ -49,6 +54,11 @@
       "pembakaran3.jpg",
       "pembakaran4.jpg",
       "pembakaran5.jpg"
+    ],
+    "chips": [
+      "Ritual",
+      "Temple",
+      "Ceremony"
     ]
   },
   {
@@ -65,6 +75,11 @@
       "goa3.jpg",
       "goa4.jpg",
       "goa5.jpg"
+    ],
+    "chips": [
+      "Cave",
+      "Meditation",
+      "Spiritual"
     ]
   },
   {
@@ -80,6 +95,11 @@
       "keputren2.jpg",
       "keputren3.jpg",
       "keputren4.jpg"
+    ],
+    "chips": [
+      "Royal",
+      "Princess",
+      "Residence"
     ]
   }
 

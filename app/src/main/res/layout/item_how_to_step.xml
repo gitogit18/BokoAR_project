@@ -1,60 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:paddingBottom="24dp"
-    android:gravity="center_vertical">
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark">
 
-    <!-- ICON BESAR -->
-    <ImageView
-        android:id="@+id/iconCircle"
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:background="@drawable/bg_step_circle"
-        android:padding="12dp"
-        android:src="@drawable/cameraicon"
-        android:scaleType="centerInside" />
-
-    <!-- ANGKA  -->
-    <TextView
-        android:id="@+id/tvStepNumber"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="6dp"
-        android:gravity="center"
-        android:background="@drawable/bg_step_number"
-        android:text="1"
-        android:textColor="@color/softWhite"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_vertical" />
-
-    <!-- TITLE + DESC -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginStart="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvStepTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Allow camera access"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+        <!-- ICON + NUMBER -->
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_step_circlee">
 
-        <TextView
-            android:id="@+id/tvStepDesc"
-            android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/iconCircle"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/camerahome"
+                app:tint="@android:color/white" />
+
+            <!-- STEP NUMBER -->
+            <TextView
+                android:id="@+id/tvStepNumber"
+                android:layout_width="20dp"
+                android:layout_height="13dp"
+                android:layout_gravity="end|bottom"
+                android:background="@drawable/bg_step_number"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <!-- TEXT -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Grant permission to use your device camera for AR features"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/tvStepTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Camera"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStepDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow access so AR features can work properly."
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Brand Purples -->
-    <color name="colorPrimary">#7C4DFF</color>
-    <color name="colorPrimaryDark">#5E35B1</color>
-    <color name="colorPrimaryLight">#B47CFF</color>
+    <!-- Brand Brown -->
+    <color name="colorPrimary">#674928</color>
+    <color name="colorPrimaryDark">#4A351D</color>
+    <color name="colorPrimaryLight">#9A7A54</color>
 
     <!-- Secondary Accent -->
-    <color name="colorSecondary">#9575CD</color>
+    <color name="colorSecondary">#3F6B6B</color>
 
     <!-- Neutrals -->
     <color name="white">#FFFFFF</color>

@@ -1,21 +1,5 @@
 [
   {
-    "id": "cave_temple",
-    "name": "Cave Temple",
-    "shortDescription": "Meditation chambers",
-    "fullDescription": "To the east of the Ratu Boko site, there are two caves known as Gua Lanang and Gua Wadon. These caves are carved into the stone cliffs located to the north of the Pendapa area, and both of them face south. The interior space of Gua Lanang is larger than that of Gua Wadon. On the rear wall inside Gua Lanang, there are two carved niches, while each of its side walls contains one niche.\nGua Wadon is situated approximately 20 meters to the southeast of Gua Lanang and lies at a lower elevation. On the rear wall inside Gua Wadon, a single niche is carved. It is estimated that these caves once functioned as guard posts, as their surrounding environment offers a clear and wide view toward the southern and eastern areas.",
-    "latitude": -7.7712,
-    "longitude": 110.4982,
-    "category": "Sacred Sites",
-    "images": [
-      "goa1.jpg",
-      "goa2.jpg",
-      "goa3.jpg",
-      "goa4.jpg",
-      "goa5.jpg"
-    ]
-  },
-  {
     "id": "front_gapura",
     "name": "Gapura Utama",
     "shortDescription": "Most popular",
@@ -29,6 +13,11 @@
       "gapura4.jpg",
       "gapura5.jpg",
       "gapura6.jpg"
+    ],
+    "chips" : [
+      "Scenic View",
+      "Gate",
+      "Enterance"
     ]
   },
   {

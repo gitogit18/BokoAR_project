@@ -60,7 +60,7 @@ class MapActivity : AppCompatActivity() {
             mapView.getMapboxMap().setCamera(
                 CameraOptions.Builder()
                     .center(ratuBoko)
-                    .zoom(14.0)
+                    .zoom(15.0)
                     .build()
             )
 

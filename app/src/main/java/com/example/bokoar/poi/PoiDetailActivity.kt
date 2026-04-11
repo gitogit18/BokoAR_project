@@ -36,14 +36,21 @@ class PoiDetailActivity() : AppCompatActivity() {
 
         binding.btnViewInMap.setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
+            intent.putExtra("POI_ID", poi.id)
             startActivity(intent)
         }
     }
     private fun bindPoi(poi: PoiDetailContent) {
-        binding.topAppBarDetail.title = poi.name
-        binding.tvPOIDetailTitle.text = poi.name
-        binding.tvPOIDescription.text = poi.fullDescription
 
+        binding.tvTitleOverlay.text = poi.name
+        binding.topAppBarDetail.title = poi.name
+
+        // Text
+        val formatted = poi.fullDescription
+            .replace("\n", "\n\n") // add spacing between paragraphs
+            .trim()
+
+        binding.tvPOIDescription.text = formatted
 
         binding.imgPoiHeader.adapter =
             PoiImagePagerAdapter(poi.images)

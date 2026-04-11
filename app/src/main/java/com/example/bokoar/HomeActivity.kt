@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bokoar.map.MapActivity
+import com.example.bokoar.overview.OverviewActivity
 import com.example.bokoar.settings.SettingsActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         val cardPoi = findViewById<MaterialCardView>(R.id.cardPOI)
 
         cardPoi.setOnClickListener {
-            val intent = Intent(this, PoiListActivity::class.java)
+            val intent = Intent(this, OverviewActivity::class.java)
             startActivity(intent)
         }
 
@@ -31,15 +32,15 @@ class HomeActivity : AppCompatActivity() {
         }
 
 
-        val tvLogout = findViewById<TextView>(R.id.tvLogout)
-        tvLogout.setOnClickListener {
-            AlertDialog.Builder(this)
-                .setTitle("Log Out")
-                .setMessage("Are you sure you want to log out?")
-                .setPositiveButton("Yes") { _, _ -> finishAffinity()}
-                .setNegativeButton("Cancel", null)
-                .show()
-        }
+//        val tvLogout = findViewById<TextView>(R.id.tvLogout)
+//        tvLogout.setOnClickListener {
+//            AlertDialog.Builder(this)
+//                .setTitle("Log Out")
+//                .setMessage("Are you sure you want to log out?")
+//                .setPositiveButton("Yes") { _, _ -> finishAffinity()}
+//                .setNegativeButton("Cancel", null)
+//                .show()
+//        }
 
         val settingsButton = findViewById<ImageButton>(R.id.btnSettings)
         settingsButton.setOnClickListener {

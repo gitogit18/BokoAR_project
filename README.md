@@ -1,0 +1,84 @@
+ARkana
+Augmented Reality–Based Historical Tourism Application for Keraton Ratu Boko
+
+📱 Project Overview
+
+ARkana is an Android application designed to enhance historical tourism experiences at Keraton Ratu Boko using Augmented Reality (AR) and location-based services.
+The application allows users to explore points of interest (POIs) on an interactive map, access detailed historical information, and trigger AR content at selected locations.
+This project is developed as part of an undergraduate thesis in Informatics, focusing on the practical implementation of AR technology for cultural heritage education.
+
+🎯 Objectives
+- Provide an interactive digital guide for visitors at Keraton Ratu Boko
+- Improve user engagement with historical content through AR visualization
+- Integrate map-based navigation and POI discovery
+- Demonstrate the feasibility of AR technology in heritage tourism
+
+✨ Key Features
+- 🗺️ Interactive Map (Mapbox SDK)
+  - Displays user location
+  - Custom POI markers for historical sites
+📍 Point of Interest (POI) System
+  - Clickable markers
+  - Detail pages with images and descriptions
+- 🧠 Educational Content
+  - Clear, concise historical explanations
+  - Youth-friendly narration style
+- 🧩 Augmented Reality Integration
+  - AR-enabled POIs
+  - Marker-based AR using Unity & Vuforia
+- 📱 Native Android Application
+  - Built using Kotlin
+ 
+🛠️ Tech Stack
+- Language: Kotlin
+- IDE: Android Studio
+- Map SDK: Mapbox Maps SDK for Android
+- Data Handling: JSON
+Augmented Reality  
+- Engine: Unity 3D
+- AR SDK: Vuforia
+- Integration: Unity Android build linked to native app
+  
+
+
+    
+🚀 Installation & Setup
+
+1. Clone this repository
+
+git clone https://github.com/yourusername/BokoAR.git
+
+2. Open the project in Android Studio
+3. Configure Mapbox access token in local.properties
+   
+MAPBOX_ACCESS_TOKEN=your_token_here
+
+4. Sync Gradle and run the app on a physical Android device (recommended for AR)
+
+Notes & Limitations
+- AR content is currently available only for selected POIs
+- 3D reconstructions are representational, not definitive historical restorations
+- Application is designed for educational and prototype purposes
+
+📚 Academic Context
+
+This application supports the thesis:
+
+“Augmented Reality Application Development Using Unity 3D and Vuforia in Support of Historical Tours at Keraton Ratu Boko”
+The project emphasizes:
+- Practical AR implementation
+- User experience in cultural tourism
+- Technical feasibility over full historical reconstruction
+
+👤 Author
+
+Anggito Sulistyo Adi
+
+Undergraduate Student – Informatics
+
+Universitas Islam Indonesia
+
+📄 License
+
+This project is intended for academic and educational use.
+Commercial use requires prior permission from the author.

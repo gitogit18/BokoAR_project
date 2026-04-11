@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:title="Settings"
+        android:title="Profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,8 @@
                 android:layout_marginBottom="24dp"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/colorPrimary">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,7 +76,8 @@
                         android:id="@+id/imgAppIcon"
                         android:layout_width="150dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/logoarkana"/>
+                        android:src="@drawable/logoarkana"
+                        app:tint="@color/white"/>
 
                     <TextView
                         android:id="@+id/tvAppVersion"
@@ -84,7 +86,7 @@
                         android:layout_marginTop="4dp"
                         android:text="Version 1.0.0"
                         android:textSize="14sp"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tvAppDescription"
@@ -93,127 +95,17 @@
                         android:layout_marginTop="12dp"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:text="Bringing history to life through augmented reality. Explore the ancient palace complex and discover its fascinating heritage."
+                        android:text="Brought to you by Anggito Sulistyo Adi - 21523200 on a project to his Final Project. Supervised by Mrs. Arrie Kurniawardhani, UII 2026"
                         android:textSize="14sp"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Row: Development -->
-            <LinearLayout
-                android:id="@+id/rowDevelopment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="4dp"
-                android:foreground="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_develop"
-                    android:background="@drawable/bg_step_circle"
-                    android:padding="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Development"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvDevTeamSubtitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="See people behind the project"
-                        android:textSize="14sp"
-                        android:textColor="@color/black" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/chevronright" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#22000000" />
-
-            <!-- Row: Institution -->
-            <LinearLayout
-                android:id="@+id/rowInstitution"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="4dp"
-                android:foreground="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_institution"
-                    android:background="@drawable/bg_step_circle"
-                    android:padding="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Institution"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvInstitutionSubtitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Universitas Islam Indonesia"
-                        android:textSize="14sp"
-                        android:textColor="@color/black" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/chevronright" />
-            </LinearLayout>
-
-            <!-- spacing antar section -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="24dp" />
-
-            <!-- ============ SECTION 2: INFORMATION ============ -->
-
             <TextView
-                android:id="@+id/tvSectionInfo"
+                android:id="@+id/tvSectionCredits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="INFORMATION"
+                android:text="CREDITS"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:textSize="12sp"
@@ -221,107 +113,80 @@
                 android:letterSpacing="0.1"
                 android:paddingBottom="8dp" />
 
-            <!-- Row: References -->
-
-            <LinearLayout
-                android:id="@+id/rowReferences"
+            <!--  Second card: icon + title + version + description -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCredits"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:paddingHorizontal="4dp"
-                android:paddingVertical="12dp">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_step_circle"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_references" />
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/colorPrimaryLight">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:paddingStart="12dp">
+                    android:gravity="center_horizontal"
+                    android:padding="24dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvCredits"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="References"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Daftar pustaka terkait situs dan AR"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/chevronright" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#22000000" />
-
-            <!-- Row: Credits -->
-            <LinearLayout
-                android:id="@+id/rowCredits"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="4dp"
-                android:foreground="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_credits"
-                    android:background="@drawable/bg_step_circle"
-                    android:padding="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Credits"
+                        android:layout_marginTop="12dp"
+                        android:gravity="left"
                         android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@color/black" />
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvSectionReferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="References"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:letterSpacing="0.1"
+                android:paddingBottom="8dp" />
+
+            <!--  Third card: icon + title + version + description -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardReferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/colorPrimaryLight">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="24dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvReferences"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Libraries, Assets, dan Contributors"
+                        android:layout_marginTop="12dp"
+                        android:gravity="left"
+                        android:text=""
                         android:textSize="14sp"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
                 </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/chevronright" />
-            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>

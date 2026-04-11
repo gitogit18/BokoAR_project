@@ -16,9 +16,13 @@ class HowToUseActivity : AppCompatActivity() {
 
         val toolbar = findViewById<MaterialToolbar>(R.id.topAppBarHowTo)
 
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "How to Use"
+
         toolbar.setNavigationOnClickListener {
             finish()
         }
+
 
         setupSteps()
 
@@ -49,8 +53,8 @@ class HowToUseActivity : AppCompatActivity() {
             root = step1,
             number = "1",
             iconRes = R.drawable.cameraicon,
-            title = "Allow camera access",
-            desc = "Grant permission to use your device camera for AR features."
+            title = "Enable Camera Access",
+            desc = "Allow camera access to activate AR features on your device."
         )
 
         // Step 2
@@ -59,8 +63,8 @@ class HowToUseActivity : AppCompatActivity() {
             root = step2,
             number = "2",
             iconRes = R.drawable.cameraicon,
-            title = "Choose a location",
-            desc = "Select a destination from the map or list."
+            title = "Go to Pendapa Area",
+            desc = "Head to the Pendapa area where AR is available"
         )
 
         // Step 3
@@ -70,8 +74,8 @@ class HowToUseActivity : AppCompatActivity() {
             root = step3,
             number = "3",
             iconRes = R.drawable.cameraicon,
-            title = "Point at a Marker",
-            desc = "Aim your camera at the AR marker at the site."
+            title = "Scan the Marker",
+            desc = "Point your camera at the AR marker in the Pendapa area."
         )
 
         // Step 4
@@ -81,8 +85,8 @@ class HowToUseActivity : AppCompatActivity() {
             root = step4,
             number = "4",
             iconRes = R.drawable.cameraicon,
-            title = "View AR",
-            desc = "Explore the sites!"
+            title = "Experience the Site",
+            desc = "Watch history come to life and explore the story around you."
         )
     }
 }

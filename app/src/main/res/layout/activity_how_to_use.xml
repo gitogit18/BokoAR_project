@@ -1,110 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/colorBackground">
 
-    <!-- Top App Bar -->
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/topAppBarHowTo"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:title="How to Use"
-        app:titleTextColor="@color/black"
-        app:navigationIcon="@drawable/backbutton_poilist"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <!-- Divider di bawah AppBar -->
-    <View
-        android:id="@+id/topDivider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="#E0E0E0"
-        app:layout_constraintTop_toBottomOf="@id/topAppBarHowTo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Konten scrollable -->
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="24dp"
-        app:layout_constraintTop_toBottomOf="@id/topDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <LinearLayout
-            android:orientation="vertical"
+        <!-- HEADER -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarHowTo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:title="How to Use"
+            android:titleTextColor="@color/colorPrimary"
+            app:navigationIcon="@drawable/backbutton_poilist"
+            app:navigationIconTint="@color/colorPrimary"/>
 
-            <!-- Intro -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Follow these simple steps to explore Ratu Boko with augmented reality:"
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:paddingBottom="24dp" />
+        <!-- INTRO CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark">
 
-            <!-- Step 1 -->
-            <include
-                android:id="@+id/step1"
-                layout="@layout/item_how_to_step" />
-
-            <!-- Step 2 -->
-            <include
-                android:id="@+id/step2"
-                layout="@layout/item_how_to_step" />
-
-            <!-- Step 3 -->
-            <include
-                android:id="@+id/step3"
-                layout="@layout/item_how_to_step" />
-
-            <!-- Step 4 -->
-            <include
-                android:id="@+id/step4"
-                layout="@layout/item_how_to_step" />
-
-            <!-- Tips Box -->
             <LinearLayout
-                android:id="@+id/tipsBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bg_tips_box"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_develop"
+                    app:tint="@color/white" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Tips for using AR optimally"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="1"
+                    android:text="Learn how to explore Ratu Boko using AR in a few simple steps."
                     android:textSize="14sp"
-                    android:paddingBottom="8dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="- Use AR in a bright and stable environment.\n- Hold your phone steady and keep the marker in frame.\n- Avoid covering the camera or blocking the AR area."
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textColor="@color/white"
+                    android:paddingStart="12dp"/>
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
+        <!-- STEP 1 -->
+        <include layout="@layout/item_how_to_step"
+            android:id="@+id/step1"/>
 
-        </LinearLayout>
+        <!-- STEP 2 -->
+        <include layout="@layout/item_how_to_step"
+            android:id="@+id/step2"/>
 
+        <!-- STEP 3 -->
+        <include layout="@layout/item_how_to_step"
+            android:id="@+id/step3"/>
 
+        <!-- STEP 4 -->
+        <include layout="@layout/item_how_to_step"
+            android:id="@+id/step4"/>
 
-    </ScrollView>
+        <!-- TIPS CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

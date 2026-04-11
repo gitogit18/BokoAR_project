@@ -2,6 +2,7 @@ package com.example.bokoar.onboarding
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
 import com.example.bokoar.databinding.ActivityOnboardingBinding
 import com.example.bokoar.R
 import com.example.bokoar.HomeActivity
@@ -21,20 +22,20 @@ class OnboardingActivity : AppCompatActivity() {
 
         pages = listOf(
             OnboardingPage(
-                title = "Welcome to Boko AR",
-                description = "Experience Ratu Boko through AR",
+                title = "Step Into Ratu Boko",
+                description = "Explore history brought to life through augmented reality",
                 iconRes = R.drawable.onboarding1
             ),
             OnboardingPage(
-                title = "Explore With AR!",
-                description = "Follow interactive maps to discover key areas of Ratu Boko without getting lost.",
-                iconRes = R.drawable.onboarding3
+                title = "Explore at Your Own Pace",
+                description = "Use the map to get a clear overview of Ratu Boko and find important spots around you. Take your time discovering each area as you move through the site.",
+                iconRes = R.drawable.onboarding2
             ),
 
             OnboardingPage(
-                title = "Audio guide Available",
-                description = "Listen and Read curated stories about the history and culture behind each spot",
-                iconRes = R.drawable.onboarding4
+                title = "Hear the Stories of the Past",
+                description = "Dive into the history and meaning behind every place you visit",
+                iconRes = R.drawable.onboarding3
             )
         )
 
@@ -42,6 +43,15 @@ class OnboardingActivity : AppCompatActivity() {
         binding.viewPager.adapter = adapter
         // connects dots indicator to the ViewPager
         binding.dotsIndicator.attachTo(binding.viewPager)
+
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                binding.btnNext.text =
+                    if (position == pages.lastIndex) "Start Exploring!"
+                    else "Continue"
+                super.onPageSelected(position)
+            }
+        })
 
         // Handle next Button
         binding.btnNext.setOnClickListener {

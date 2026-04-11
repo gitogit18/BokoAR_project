@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp"
     app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
     app:cardElevation="1dp">
 
     <LinearLayout
@@ -27,7 +28,8 @@
                 android:layout_height="wrap_content"
                 android:text="Cave Temple"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/tvPoiSubtitle"
@@ -35,14 +37,15 @@
                 android:layout_height="wrap_content"
                 android:text="Meditation chambers"
                 android:textSize="14sp"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imgChevron"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/rightclicklistvertical"/>
+            android:src="@drawable/rightclicklistvertical"
+            app:tint="@color/white" />
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

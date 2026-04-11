@@ -1,0 +1,97 @@
+[
+  {
+    "id": "cave_temple",
+    "name": "Gua Lanang dan Wadon",
+    "shortDescription": "Gua Meditasi",
+    "fullDescription": "Di sisi timur kawasan Ratu Boko, terdapat dua gua yang dikenal sebagai Gua Lanang dan Gua Wadon. Kedua gua ini dipahat pada tebing batu yang berada di sebelah utara area Pendapa dan sama-sama menghadap ke arah selatan.\nRuang bagian dalam Gua Lanang lebih luas dibandingkan Gua Wadon. Pada dinding belakang Gua Lanang terdapat dua ceruk yang dipahat, sementara di masing-masing dinding sampingnya terdapat satu ceruk.\nGua Wadon terletak sekitar 20 meter di sebelah tenggara Gua Lanang dan posisinya berada pada ketinggian yang lebih rendah. Di bagian dalamnya, tepat pada dinding belakang, terdapat satu ceruk yang dipahat.\nKedua gua ini diperkirakan dahulu berfungsi sebagai pos penjagaan, karena letaknya yang strategis dan memungkinkan pengawasan yang jelas serta luas ke arah selatan dan timur.",
+    "latitude": -7.7712,
+    "longitude": 110.4982,
+    "category": "Sacred Sites",
+    "images": [
+      "goa1.jpg",
+      "goa2.jpg",
+      "goa3.jpg",
+      "goa4.jpg",
+      "goa5.jpg"
+    ]
+  },
+  {
+    "id": "front_gapura",
+    "name": "Gapura Utama",
+    "shortDescription": "Sangat Diminati",
+    "fullDescription": "Gerbang I terletak di teras kedua. Kompleks gerbang ini berbentuk paduraksa dan terdiri atas tiga pintu gerbang yang berdiri berdekatan. Gerbang tengah berfungsi sebagai gerbang utama dengan ukuran paling besar serta memiliki lantai yang lebih tinggi dibandingkan dua gerbang di sisi kiri dan kanannya. Masing-masing gerbang pada awalnya memiliki atap tersendiri. Namun, atap gerbang utama sudah tidak dapat direkonstruksi sehingga bentuk aslinya belum diketahui.\nDi bagian depan bangunan gerbang terdapat tangga naik, dengan empat anak tangga menuju gerbang utama dan tiga anak tangga menuju masing-masing gerbang di sisi samping.\n\nGerbang II berada di teras ketiga. Sama seperti Gerbang I, gerbang ini juga dibangun dalam bentuk paduraksa dan berfungsi sebagai penghubung antara teras kedua dan ketiga. Gerbang II terdiri atas lima pintu gerbang yang tersusun dalam satu garis lurus dan saling berdekatan. Gerbang tengah yang berukuran paling besar disebut sebagai gerbang utama, diapit oleh dua gerbang di kiri dan kanan yang dikenal sebagai gerbang sayap luar.\n\nTangga menuju gerbang utama terdiri dari lima belas anak tangga, sedangkan tangga menuju gerbang sayap dalam masing-masing berjumlah tiga anak tangga. Untuk gerbang sayap luar tidak diperlukan tangga, karena ketinggian lantainya hampir sejajar dengan permukaan teras ketiga.",
+    "latitude": -7.769386,
+    "longitude": 110.488493,
+    "category": "Historical Structures",
+    "images": [
+      "gapura1.jpg",
+      "gapura2.png",
+      "gapura4.jpg",
+      "gapura5.jpg",
+      "gapura6.jpg"
+    ]
+  },
+  {
+    "id": "pendapa",
+    "name": "Pendapa Agung",
+    "shortDescription": "Kediaman Ningrat",
+    "fullDescription": "Struktur pendapa terletak di teras keempat dan memiliki luas sekitar 14.000 m². Kompleks pendapa ini terdiri atas pagar pembatas yang mengelilingi area serta dua batur (panggung batu), masing-masing berada di sisi utara dan selatan.\nBagian dasar dan atap pagar dibuat dari batu andesit, sedangkan bagian dindingnya menggunakan batu putih. Pada bagian atas pagar terdapat hiasan berbentuk utpala sebagai ornamen dekoratif.\nDi bagian kaki pagar terdapat jaladwara atau saluran air yang berfungsi mengalirkan air dari dalam area ke luar, kemudian ditampung pada wadah berbentuk lengkung.\nKedua batur terbuat dari batu andesit dan dihubungkan oleh sebuah koridor. Batur-batur ini menjadi struktur utama dalam kompleks pendapa. Pada masa lalu, di atasnya berdiri tiang-tiang penyangga bangunan yang diduga memiliki dinding. Bangunan tersebut diperkirakan berfungsi sebagai tempat tinggal.",
+    "latitude": -7.771531,
+    "longitude": 110.490353,
+    "category": "Historical Structures",
+    "images": [
+      "pendapa1.jpg",
+      "pendapa2.jpg",
+      "pendapa3.jpg",
+      "pendapa4.jpg"
+    ]
+  },
+  {
+    "id": "candi_pembakaran",
+    "name": "Candi Pembakaran",
+    "shortDescription": "Tempat Persembahan",
+    "fullDescription": "Candi Pembakaran terletak di teras ketiga kompleks. Bangunan ini berbentuk bujur sangkar dan tersusun atas dua tingkat teras. Untuk mencapai teras bagian atas, terdapat tangga naik di sisi barat.\nBagian luar bangunan terbuat dari batu andesit, sedangkan bagian dalamnya menggunakan batu tuf.\nDi tengah teras kedua terdapat sumur berbentuk persegi. Sementara itu, di sebelah timur Candi Pembakaran terdapat sebuah kolam yang dikelilingi pagar pembatas.",
+    "latitude": -7.769003,
+    "longitude": 110.488779,
+    "category": "Historical Structures",
+    "images": [
+      "pembakaran1.jpg",
+      "pembakaran2.jpg",
+      "pembakaran3.jpg",
+      "pembakaran4.jpg",
+      "pembakaran5.jpg"
+    ]
+  },
+  {
+    "id": "goa",
+    "name": "Goa Lanang dan Wadon",
+    "shortDescription": "Ascetic Caves",
+    "fullDescription": "Di sisi timur kawasan Situs Ratu Boko terdapat dua gua yang dikenal sebagai Gua Lanang dan Gua Wadon. Kedua gua ini dipahat pada tebing batu yang berada di sebelah utara area Pendapa dan sama-sama menghadap ke arah selatan.\nRuang dalam Gua Lanang lebih luas dibandingkan Gua Wadon. Pada dinding bagian belakang Gua Lanang terdapat dua ceruk pahatan, sedangkan pada masing-masing dinding sampingnya terdapat satu ceruk.\n\nGua Wadon terletak sekitar 20 meter di sebelah tenggara Gua Lanang dan posisinya berada pada ketinggian yang lebih rendah. Di dinding belakang bagian dalam Gua Wadon terdapat satu ceruk pahatan.\n\nKedua gua ini diperkirakan dahulu berfungsi sebagai pos penjagaan, karena lokasinya memungkinkan pandangan yang luas dan jelas ke arah selatan dan timur.",
+    "latitude": -7.769799,
+    "longitude": 110.490790,
+    "category": "Historical Structures",
+    "images": [
+      "goa1.jpg",
+      "goa2.jpg",
+      "goa3.jpg",
+      "goa4.jpg",
+      "goa5.jpg"
+    ]
+  },
+  {
+    "id": "keputren",
+    "name": "Keputren",
+    "shortDescription": "Tempat tinggal putri kerajaan.",
+    "fullDescription": "Area keputren terbagi menjadi dua bagian, yaitu bagian timur dan bagian barat. Kedua bagian ini dipisahkan oleh sebuah pagar dan dihubungkan melalui satu gerbang.\nDi bagian timur terdapat sebuah kolam atau waduk berbentuk persegi yang berfungsi sebagai sumber air bagi kawasan keputren. Di sebelah timur kolam tersebut ditemukan fondasi umpak batu yang dahulu menjadi penopang tiang-tiang kayu untuk struktur atap bangunan.\nKeputren diperkirakan pada awalnya merupakan kawasan hunian yang terdiri atas bangunan-bangunan berbahan kayu. Di dalam halaman ini juga ditemukan umpak batu yang dihiasi relief hewan dan tumbuhan. Namun, susunan serta posisi asli dari umpak-umpak tersebut hingga kini belum dapat dipastikan.",
+    "latitude": -7.771995,
+    "longitude": 110.491530,
+    "category": "Historical Structures",
+    "images": [
+      "keputren1.jpg",
+      "keputren2.jpg",
+      "keputren3.jpg",
+      "keputren4.jpg"
+    ]
+  }
+
+]

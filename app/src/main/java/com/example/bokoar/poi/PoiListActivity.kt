@@ -44,15 +44,15 @@ class PoiListActivity : AppCompatActivity() {
             }
         }
 
-        // SACRED SITES – vertical
-        binding.rvSacredSites.apply {
-            layoutManager = LinearLayoutManager(this@PoiListActivity)
-            adapter = PoiListAdapter(sacredSites) { poi ->
-                openPoiDetail(poi)
-            }
-        }
+//        // SACRED SITES – vertical
+//        binding.rvSacredSites.apply {
+//            layoutManager = LinearLayoutManager(this@PoiListActivity)
+//            adapter = PoiListAdapter(sacredSites) { poi ->
+//                openPoiDetail(poi)
+//            }
+//        }
 
-        // HISTORICAL STRUCTURES – vertical
+        // OTHER STRUCTURES – vertical
         binding.rvHistorical.apply {
             layoutManager = LinearLayoutManager(this@PoiListActivity)
             adapter = PoiListAdapter(historical) { poi ->

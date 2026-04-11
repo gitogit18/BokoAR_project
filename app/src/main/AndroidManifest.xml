@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BokoAR">
         <activity
+            android:name=".overview.OverviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".poi.PoiListActivity"
             android:exported="false" />
         <activity
@@ -23,15 +26,13 @@
             android:exported="false" />
         <activity
             android:name=".HowToUseActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />
         <activity
             android:name=".map.MapActivity"
-            android:exported="false"/>
-
-
+            android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

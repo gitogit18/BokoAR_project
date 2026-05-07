@@ -99,6 +99,7 @@
 
             <!-- CARD -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAbout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
@@ -125,7 +126,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ratu Boko is an archaeological site located on a plateau near Yogyakarta. It is believed to have functioned as a royal complex during the 8th century, blending Hindu and Buddhist architectural elements."
+                        android:text="@string/ratu_boko_description"
                         android:textSize="14sp"
                         android:textColor="@color/white"
                         android:lineSpacingExtra="6dp"
@@ -150,5 +151,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

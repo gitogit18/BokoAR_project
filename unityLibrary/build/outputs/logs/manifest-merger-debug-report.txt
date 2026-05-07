@@ -1,0 +1,174 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:2:1-31:12
+	package
+		INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:2:11-69
+supports-gl-texture#GL_KHR_texture_compression_astc_ldr
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:3:3-77
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:3:24-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:4:3-65
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:4:20-62
+uses-permission#android.permission.CAMERA
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:5:3-63
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:5:20-60
+uses-feature#0x00030000
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:6:3-52
+	android:glEsVersion
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:6:17-49
+uses-feature#android.hardware.camera
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:7:3-83
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:7:56-80
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:7:17-55
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:8:3-93
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:8:66-90
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:8:17-65
+uses-feature#android.hardware.camera.front
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:9:3-89
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:9:62-86
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:9:17-61
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:10:3-88
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:10:61-85
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:10:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:11:3-99
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:11:72-96
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:11:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:12:3-108
+	android:required
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:12:81-105
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:12:17-80
+application
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:13:3-30:17
+	android:extractNativeLibs
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:13:59-91
+	android:enableOnBackInvokedCallback
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:13:16-58
+meta-data#unity.splash-mode
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:14:5-69
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:14:49-66
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:14:16-48
+meta-data#unity.splash-enable
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:15:5-74
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:15:51-71
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:15:16-50
+meta-data#unity.launch-fullscreen
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:16:5-78
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:16:55-75
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:16:16-54
+meta-data#unity.render-outside-safearea
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:17:5-84
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:17:61-81
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:17:16-60
+meta-data#notch.config
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:18:5-81
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:18:44-78
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:18:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:19:5-84
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:19:61-81
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:19:16-60
+meta-data#unity.strip-engine-code
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:20:5-78
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:20:55-75
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:20:16-54
+meta-data#unity.auto-set-game-state
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:21:5-80
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:21:57-77
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:21:16-56
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:5-29:16
+	android:screenOrientation
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:400-436
+	android:enabled
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:197-219
+	android:launchMode
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:280-311
+	android:hardwareAccelerated
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:244-279
+	android:exported
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:220-243
+	android:resizeableActivity
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:366-399
+	android:configChanges
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:15-196
+	android:theme
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:437-478
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:22:312-365
+meta-data#unityplayer.UnityActivity
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:24:7-82
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:24:59-79
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:24:18-58
+meta-data#WindowManagerPreference:FreeformWindowSize
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:25:7-130
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:25:76-127
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:25:18-75
+meta-data#WindowManagerPreference:FreeformWindowOrientation
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:26:7-145
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:26:83-142
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:26:18-82
+meta-data#notch_support
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:27:7-70
+	android:value
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:27:47-67
+	android:name
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:27:18-46
+layout
+ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:28:7-68
+	android:minWidth
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:28:41-65
+	android:minHeight
+		ADDED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml:28:15-40
+uses-sdk
+INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml
+INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/anggitosulistyo/AndroidStudioProjects/BokoAR/unityLibrary/src/main/AndroidManifest.xml

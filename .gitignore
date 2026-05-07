@@ -17,3 +17,4 @@ local.properties
 unityExport/
 unityExport_old/
 app/src/libs/
+shared/

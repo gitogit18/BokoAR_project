@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="pendapa1" size="4.000000 2.250000" />
+    <ImageTarget name="keputren1" size="4.000000 2.250000" />
+    <ImageTarget name="goaWadon" size="4.000000 2.250000" />
+    <ImageTarget name="goaLanang" size="4.000000 2.250000" />
+    <ImageTarget name="mainGate1" size="4.000000 2.250000" />
+    <ImageTarget name="sumurSuci" size="6.000000 3.375000" />
+    <ImageTarget name="tanggaPembakaran" size="5.000000 2.812500" />
+    <ImageTarget name="CandiPembakaran" size="3.000000 1.687500" />
+    <ImageTarget name="ratubokogate" size="1.000000 0.750000" />
+  </Tracking>
+</QCARConfig>

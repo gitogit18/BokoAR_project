@@ -14,6 +14,7 @@ if (localPropsFile.exists()) {
     localPropsFile.inputStream().use { localProps.load(it) }
 }
 
+
 val mapboxDownloadsToken: String =
     localProps.getProperty("MAPBOX_DOWNLOADS_TOKEN")
         ?: System.getenv("MAPBOX_DOWNLOADS_TOKEN")
@@ -38,3 +39,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "BokoAR"
 include(":app")
+
+include(":unityLibrary")
+project(":unityLibrary").projectDir = File(rootProject.projectDir, "unityLibrary")
+
+include(":unityLibrary:xrmanifest.androidlib")
+
+project(":unityLibrary:xrmanifest.androidlib").projectDir =
+    File(rootProject.projectDir, "unityLibrary/xrmanifest.androidlib")
+
+

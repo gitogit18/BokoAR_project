@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BokoAR">
         <activity
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:exported="true"
+            android:theme="@style/UnityThemeSelector"
+            tools:replace="android:exported,android:theme"/>
+        <activity
             android:name=".overview.OverviewActivity"
             android:exported="false" />
         <activity

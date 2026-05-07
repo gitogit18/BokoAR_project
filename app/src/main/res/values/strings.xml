@@ -2,4 +2,10 @@
     <string name="app_name">ARkana</string>
     <string name="title_poi_list">Points Of Interests</string>
     <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiYW5nZ2l0YWphIiwiYSI6ImNtYjI0NXh1dTBlankyanB4c2d2dHZyMjgifQ.vgE0TO2pVtUaaW6WrjhT_w</string>
+    <string name="ratu_boko_description">
+Ratu Boko Temple is different from most ancient Javanese sites, which are generally religious temples. Here, you will not only find sacred structures, but also a complex that functioned as a residence or palace. There are gates, pavilions, living areas, bathing pools, and protective walls. Some of the buildings were originally made of wood, so today only their stone foundations remain.Unlike other palaces in Java that are usually located in lowland areas, Ratu Boko sits on a hill about 195 meters high. This location made the construction process more challenging.
+        The main materials, such as white stone and andesite, were sourced directly from the surrounding area, demonstrating an efficient use of local resources.
+        Interestingly, despite being on a hill, the complex has a well-developed water management system. This is evident from the presence of natural springs, bathing pools, and water channels that supported daily needs.
+        Ratu Boko is not just a historical site, but a complex designed with careful planning and functional purpose.
+</string>
 </resources>

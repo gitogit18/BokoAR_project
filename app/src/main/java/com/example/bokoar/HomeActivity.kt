@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.bokoar.map.MapActivity
 import com.example.bokoar.overview.OverviewActivity
 import com.example.bokoar.settings.SettingsActivity
+import android.view.View
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +51,17 @@ class HomeActivity : AppCompatActivity() {
         val openMapButton = findViewById<MaterialCardView>(R.id.cardMap)
         openMapButton.setOnClickListener {
             startActivity(Intent(this, MapActivity::class.java))
+        }
+
+        val cardStartAR = findViewById<View>(R.id.cardStartAR)
+
+        cardStartAR.setOnClickListener {
+            val intent = Intent()
+            intent.setClassName(
+                this,
+                "com.unity3d.player.UnityPlayerActivity"
+            )
+            startActivity(intent)
         }
 
 

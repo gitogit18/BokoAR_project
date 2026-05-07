@@ -211,6 +211,17 @@ class MapActivity : AppCompatActivity() {
 
         pointAnnotationManager.addClickListener { annotation ->
 
+            // Reset all markers to normal size
+            pointAnnotationManager.annotations.forEach {
+                it.iconSize = 0.6
+                pointAnnotationManager.update(it)
+            }
+
+            // Enlarge selected marker
+            annotation.iconSize = 0.9
+            pointAnnotationManager.update(annotation)
+
+
             val poiId = annotation.getData()
                 ?.asJsonObject
                 ?.get("id")
@@ -219,7 +230,28 @@ class MapActivity : AppCompatActivity() {
             Log.d("POI_CLICK", "Clicked: $poiId")
 
             if (poiId != null) {
-                openPoiDetail(poiId)
+
+                val poi = poiList.find { it.id == poiId }
+
+                com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
+                    .setTitle(poi?.name ?: "POI")
+                    .setMessage("Explore this location?")
+
+                    .setNegativeButton("Cancel") { _, _ ->
+                        annotation.iconSize = 0.6
+                        pointAnnotationManager.update(annotation)
+                    }
+
+                    .setPositiveButton("View") { _, _ ->
+                        openPoiDetail(poiId)
+                    }
+
+                    .setOnDismissListener {
+                        annotation.iconSize = 0.6
+                        pointAnnotationManager.update(annotation)
+                    }
+
+                    .show()
             }
 
             true

@@ -51,7 +51,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="10dp"
             android:contentDescription="Profile"
-            app:srcCompat="@drawable/profile" />
+            app:srcCompat="@drawable/arkanaaaa" />
 
     </LinearLayout>
 
